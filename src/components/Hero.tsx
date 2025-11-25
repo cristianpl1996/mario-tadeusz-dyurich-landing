@@ -41,8 +41,8 @@ const Hero = () => {
               </Button>
               <Button 
                 size="lg" 
-                variant="outline"
-                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all"
+                variant="secondary"
+                className="shadow-sm hover:shadow-md transition-all"
               >
                 Conocer Más
               </Button>
@@ -58,10 +58,10 @@ const Hero = () => {
               </a>
               <a 
                 href="tel:+1234567890" 
-                className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+                className="flex items-center gap-2 text-muted-foreground/70 hover:text-muted-foreground transition-colors"
               >
-                <Phone className="h-5 w-5" />
-                <span className="text-sm">+58 (123) 456-7890</span>
+                <Phone className="h-4 w-4" />
+                <span className="text-xs">+58 (123) 456-7890</span>
               </a>
             </div>
           </div>
