@@ -7,25 +7,25 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      content: "contacto@drmarczuk.com",
+      content: "marczuk@gmail.com",
       href: "mailto:contacto@drmarczuk.com",
     },
     {
       icon: Phone,
       title: "Teléfono",
-      content: "+58 (123) 456-7890",
-      href: "tel:+581234567890",
-    },
-    {
-      icon: MapPin,
-      title: "Ubicación",
-      content: "Hospital Veterinario Animal Home",
-      href: "#",
+      content: "+52 55 4899 3902",
+      href: "tel:+525548993902",
     },
     {
       icon: Calendar,
       title: "Horario",
       content: "Lun - Vie: 8:00 AM - 6:00 PM",
+      href: "#",
+    },
+    {
+      icon: MapPin,
+      title: "Sinergia",
+      content: "Medicina del dolor",
       href: "#",
     },
   ];
@@ -46,25 +46,27 @@ const Contact = () => {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
-            {contactInfo.map((info, index) => (
-              <Card 
-                key={index}
-                className="p-6 text-center hover:shadow-[var(--shadow-medium)] transition-all duration-300 border-border bg-card group cursor-pointer"
-              >
-                <a href={info.href} className="block">
-                  <div className="inline-flex p-3 bg-gradient-to-br from-primary to-secondary rounded-xl text-primary-foreground mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <info.icon className="h-6 w-6" />
-                  </div>
-                  <h3 className="font-medium text-sm text-muted-foreground mb-2">
-                    {info.title}
-                  </h3>
-                  <p className="text-sm font-medium">
-                    {info.content}
-                  </p>
-                </a>
-              </Card>
-            ))}
+          <div className="flex justify-center mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full max-w-5xl">
+              {contactInfo.map((info, index) => (
+                <Card 
+                  key={index}
+                  className="p-6 text-center hover:shadow-[var(--shadow-medium)] transition-all duration-300 border-border bg-card group cursor-pointer flex flex-col items-center"
+                >
+                  <a href={info.href} className="block w-full">
+                    <div className="inline-flex p-3 bg-gradient-to-br from-primary to-secondary rounded-xl text-primary-foreground mb-4 group-hover:scale-110 transition-transform duration-300 mx-auto">
+                      <info.icon className="h-6 w-6" />
+                    </div>
+                    <h3 className="font-medium text-sm text-muted-foreground mb-2">
+                      {info.title}
+                    </h3>
+                    <p className="text-sm font-medium">
+                      {info.content}
+                    </p>
+                  </a>
+                </Card>
+              ))}
+            </div>
           </div>
           
           <Card className="p-8 md:p-12 bg-gradient-to-br from-primary to-secondary text-primary-foreground">
@@ -81,16 +83,8 @@ const Contact = () => {
                   variant="secondary"
                   className="bg-white text-primary hover:bg-white/90 shadow-lg"
                 >
-                  <Calendar className="mr-2 h-5 w-5" />
-                  Agendar Ahora
-                </Button>
-                <Button 
-                  size="lg" 
-                  variant="outline"
-                  className="border-white text-white hover:bg-white hover:text-primary"
-                >
                   <Phone className="mr-2 h-5 w-5" />
-                  Llamar Ahora
+                  LLAMANOS AHORA
                 </Button>
               </div>
             </div>

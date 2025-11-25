@@ -16,10 +16,7 @@ const Index = () => {
       <footer className="bg-foreground text-background py-8">
         <div className="container mx-auto px-4 text-center">
           <p className="text-sm">
-            © {new Date().getFullYear()} Dr. Mario Tadeusz Marczuk Dyurich. Todos los derechos reservados.
-          </p>
-          <p className="text-xs mt-2 opacity-80">
-            Médico Veterinario Especialista en Medicina del Dolor
+            © {new Date().getFullYear()} Dr. Mario Marczuk. Todos los derechos reservados.
           </p>
         </div>
       </footer>
