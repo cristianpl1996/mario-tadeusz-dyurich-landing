@@ -1,14 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Mail, Phone, MapPin, Calendar } from "lucide-react";
+import { Mail, MessageCircle, Phone, Calendar, Brain } from "lucide-react";
 
 const Contact = () => {
   const contactInfo = [
     {
       icon: Mail,
       title: "Email",
-      content: "marczuk@gmail.com",
-      href: "mailto:contacto@drmarczuk.com",
+      content: "marczukdyurich.m@gmail.com",
+      href: "mailto:marczukdyurich.m@gmail.com",
     },
     {
       icon: Phone,
@@ -23,10 +23,10 @@ const Contact = () => {
       href: "#",
     },
     {
-      icon: MapPin,
+      icon: Brain,
       title: "Sinergia",
       content: "Medicina del dolor",
-      href: "#",
+      href: "https://sinergiacannabinoides.com/",
     },
   ];
 
@@ -35,11 +35,11 @@ const Contact = () => {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,hsl(var(--primary)/0.05),transparent_60%)]" />
       
       <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6">
               Agenda tu{" "}
-              <span className="gradient-text">Consulta</span>
+              <span className="gradient-text">consulta</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Estamos comprometidos con el bienestar de tu mascota. Contáctanos para agendar una cita o resolver tus dudas
@@ -47,7 +47,7 @@ const Contact = () => {
           </div>
           
           <div className="flex justify-center mb-12">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full max-w-5xl">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full">
               {contactInfo.map((info, index) => (
                 <Card 
                   key={index}
@@ -60,7 +60,7 @@ const Contact = () => {
                     <h3 className="font-medium text-sm text-muted-foreground mb-2">
                       {info.title}
                     </h3>
-                    <p className="text-sm font-medium">
+                    <p className="font-medium" style={{ fontSize: "12px" }}>
                       {info.content}
                     </p>
                   </a>
@@ -78,14 +78,21 @@ const Contact = () => {
                 Agenda una consulta con nuestro equipo especializado y descubre cómo podemos ayudar a tu compañero
               </p>
               <div className="flex flex-wrap gap-4 justify-center">
-                <Button 
-                  size="lg" 
-                  variant="secondary"
-                  className="bg-white text-primary hover:bg-white/90 shadow-lg"
+                <a
+                  href="https://wa.me/525548993902?text=Hola, me gustaría agendar una consulta"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ textDecoration: "none" }}
                 >
-                  <Phone className="mr-2 h-5 w-5" />
-                  LLAMANOS AHORA
-                </Button>
+                  <Button 
+                    size="lg" 
+                    variant="secondary"
+                    className="bg-white text-primary hover:bg-white/90 shadow-lg"
+                  >
+                    <MessageCircle className="mr-2 h-5 w-5" />
+                    ESCRÍBEME AHORA
+                  </Button>
+                </a>
               </div>
             </div>
           </Card>

@@ -5,18 +5,18 @@ const Credentials = () => {
   const credentials = [
     {
       icon: Award,
-      title: "Formación Académica",
+      title: "Formación académica",
       items: [
-        "Graduado de Médico Veterinario - Universidad Centro Occidental Lisandro Alvarado (2000)",
-        "Doctor médico de A.A.V. Servicio de anestesia y analgesia veterinaria (2006)",
+        "Graduado de médico veterinario - Universidad Centro Occidental Lisandro Alvarado (2000), Venezuela",
+        "Doctor médico de A.A.V. Servicio de anestesia y analgesia veterinaria (2006), Venezuela",
       ],
     },
     {
       icon: BookOpen,
-      title: "Experiencia Docente",
+      title: "Experiencia docente",
       items: [
-        "Director del programa de anestesia y analgesia veterinaria para veterinarios en web (2016)",
-        "Facilitador de talleres teórico prácticos de anestesia y analgesia veterinaria en Venezuela, Colombia, República Dominicana, España, Panamá, Bolivia, Nicaragua",
+        "Director del programa de analgesia veterinaria para veterinarios en web (2016)",
+        "Facilitador de talleres teórico prácticos de analgesia veterinaria en latinoamérica",
       ],
     },
     {
@@ -24,7 +24,6 @@ const Credentials = () => {
       title: "Investigación",
       items: [
         "Miembro fundador de la Siavet - Sociedad Iberoamericana de algología veterinaria",
-        "Grupo de investigación y difusión del fenómeno doloroso en pacientes veterinarios",
         "Líder investigador de monitoreo de actividad antinocioceptiva FTA de Mdolaris para Latinoamérica",
       ],
     },
@@ -32,9 +31,9 @@ const Credentials = () => {
       icon: Globe,
       title: "Reconocimientos",
       items: [
+        "Director de la Sociedad veterinaria del dolor",
         "Vicepresidente de la Siavet 2015 a la fecha",
-        "Miembro activo de la NAPP International para el estudio del Dolor",
-        "Fear Free Certified Professional 2018",
+        "Reconocimientos IASP y IVAPM",
         "Líder investigador de monitoreo de estrés con Pla de Mdolaris para Latinoamérica",
       ],
     },
@@ -43,13 +42,14 @@ const Credentials = () => {
   return (
     <section className="py-24 bg-muted">
       <div className="container mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6">
             Trayectoria y{" "}
-            <span className="gradient-text">Credenciales</span>
+            <span className="gradient-text">credenciales</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Más de dos décadas de dedicación a la medicina veterinaria y especialización en el manejo del dolor
+            Más de dos décadas de dedicación a la medicina veterinaria y especialización en el manejo del dolor en animales
           </p>
         </div>
         
@@ -82,6 +82,7 @@ const Credentials = () => {
               </ul>
             </Card>
           ))}
+        </div>
         </div>
       </div>
     </section>

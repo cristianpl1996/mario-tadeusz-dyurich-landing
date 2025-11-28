@@ -1,7 +1,7 @@
 import Hero from "@/components/Hero";
 import Credentials from "@/components/Credentials";
 import Specialties from "@/components/Specialties";
-import Gallery from "@/components/Gallery";
+import Speaking from "@/components/Speaking";
 import Contact from "@/components/Contact";
 
 const Index = () => {
@@ -10,7 +10,7 @@ const Index = () => {
       <Hero />
       <Credentials />
       <Specialties />
-      <Gallery />
+      <Speaking />
       <Contact />
       
       <footer className="bg-foreground text-background py-8">
