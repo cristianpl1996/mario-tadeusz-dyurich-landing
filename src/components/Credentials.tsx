@@ -25,6 +25,7 @@ const Credentials = () => {
       items: [
         "Miembro fundador de la Siavet - Sociedad Iberoamericana de algología veterinaria",
         "Líder investigador de monitoreo de actividad antinocioceptiva FTA de Mdolaris para Latinoamérica",
+        "Investigador en monitoreo de actividad parasimpática y su influencia en los pacientes con dolor.",
       ],
     },
     {
@@ -33,8 +34,9 @@ const Credentials = () => {
       items: [
         "Director de la Sociedad veterinaria del dolor",
         "Vicepresidente de la Siavet 2015 a la fecha",
-        "Reconocimientos IASP y IVAPM",
+        "Miembro activo de la IASP y IVAPM",
         "Líder investigador de monitoreo de estrés con Pla de Mdolaris para Latinoamérica",
+        "Investigador en monitoreo de actividad parasimpática y su influencia en los pacientes con dolor.",
       ],
     },
   ];
